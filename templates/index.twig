@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .prev_gallery img {
+            max-width: 200px;
+            margin: 5px;
+        }
+
+        .prev_gallery {
+            display: block;
+            float: left;
+        }
+    </style>
+    <title>Фотогалерея</title>
+</head>
+<body>
+{% if img1 %}
+
+    {% include 'one.twig' %}
+
+{% else %}
+
+    {% include 'prew.twig' %}
+
+{% endif %}
+
+
+</body>
+</html>
