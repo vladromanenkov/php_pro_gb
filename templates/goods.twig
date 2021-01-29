@@ -1,0 +1,8 @@
+{% for good in goods %}
+    <li>{{ good.name }} - {{ good.price }} руб.</li>
+{% endfor %}
+{% if all %}
+    <script>
+        $('#more').hide();
+    </script>
+{% endif %}
